@@ -62,7 +62,7 @@ class ConfigVars {
     async setOrigVals() {
         this.fromEnvOrMap({});
 
-        this.fromConfigFile(process.csw(), HOME_CONFIG_FILE);
+        this.fromConfigFile(process.cwd(), HOME_CONFIG_FILE);
 
         await this.checkPrepTarg();
 
